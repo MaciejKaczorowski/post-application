@@ -3,6 +3,9 @@
     <h5 class="card-title"> {{ post.title }}</h5>
     <h6 class="card-subtitle mb-2 text-muted"> id: {{ post.id }} - userId: {{ post.userId}}</h6>
     <p class="card-text"> {{ post.body }}</p>
+    <button *ngIf="showButton" class="btn btn-info" (click)="onShowPost(post.id)">
+      Show!
+    </button>
   </div>
 </div>
 
